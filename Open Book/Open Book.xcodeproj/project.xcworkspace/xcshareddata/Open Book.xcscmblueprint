@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "1702C5B661C8EFA3FA005EB50EC3D32A585784A7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "1702C5B661C8EFA3FA005EB50EC3D32A585784A7" : 0,
+    "4270EBB272FCF3D3D527D5C345478F2644A83FFB" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2197016D-1B9A-4DE5-BB1C-34A2883CBFC9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "1702C5B661C8EFA3FA005EB50EC3D32A585784A7" : "Udacity_Course\/",
+    "4270EBB272FCF3D3D527D5C345478F2644A83FFB" : "IOSProjects\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Open Book",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Open Book\/Open Book.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Progr3ss\/UdacityIOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1702C5B661C8EFA3FA005EB50EC3D32A585784A7"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Progr3ss\/IOSProjects.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4270EBB272FCF3D3D527D5C345478F2644A83FFB"
+    }
+  ]
+}
