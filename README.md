@@ -21,6 +21,7 @@ currently you can only open the book using third party applications like the iBo
 
 ##Core Data 
 
+![core_data](https://cloud.githubusercontent.com/assets/11594731/17425702/402bf32e-5a85-11e6-963c-0e49e11e6704.gif)
 
 to test core data search for plato and select the fouth edition. Becuse it the one with the epub am still trying ot figure out a way to have a better way to search for editions with epubs. But Once the book is finished downloading tap on history and you should see the book that you downloaded saved to core data. When you close the app you should be able to see the saved book.
 #Usage
