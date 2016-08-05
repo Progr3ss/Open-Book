@@ -2,6 +2,14 @@
 Open Book is an application that enbales uses to read books via iOS
 
 
+#Description 
+Open Book is an open source project that enables uses to read books on the iOS devices. Currently I have implemented search, featured and history. 
+
+
+#Usage
+
+currently you can only open the book using third party applications like the iBook or googleplay book.
+
 ##Search
 ![search](https://cloud.githubusercontent.com/assets/11594731/17421639/4e5434a4-5a60-11e6-83a7-af853d7492ed.gif) 
 
