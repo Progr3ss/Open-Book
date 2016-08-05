@@ -69,6 +69,8 @@ class BookController {
     init(book: OpenLibraryParser.Book) {
         self.book = book
     }
+	
+	
     
     func startLoadingCoverIfAvailable() {
         guard coverReceipt == nil && cover == nil else { return }
@@ -88,6 +90,7 @@ class BookController {
                 self.cover = image
                 delegate.bookControllerDidDownloadCover(self)
             case .Failure(let error):
+				
                 print("Cannot download image with error: \(error)")
             }
         }
@@ -119,7 +122,18 @@ class FeaturedBooksViewController: UIViewController {
     var managedObjectContext: NSManagedObjectContext!
     
     @IBOutlet weak var subjectsTableView: UITableView!
-    
+	
+	
+	
+	func displayFailure(){
+		
+		let alert = UIAlertController(title: "Under Maintenance", message: "The Site will be back up shortly. Come back later", preferredStyle: UIAlertControllerStyle.Alert)
+		
+		alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+		
+		self.presentViewController(alert, animated: true, completion: nil)
+	}
+	
     func startLoadingNextSubjectOrFinish() {
         guard let subjectRequest = subjectRequests.first else {
             state = .Loaded
@@ -145,6 +159,7 @@ class FeaturedBooksViewController: UIViewController {
                 self.subjects.append(Subject(localizedTitle: subjectRequest.localizedTitle, books: books))
                 shouldContinue = true
             case .Failure(let error):
+				self.displayFailure()
                 print("Cannot load books with error: \(error)")
             }
             
@@ -203,6 +218,7 @@ class FeaturedBooksViewController: UIViewController {
         
         switch state {
         case .Failed:
+			
             text = "Cannot load featured books"
             showStatusView = true
         case .Loading:

@@ -528,11 +528,6 @@
                                 <action selector="removeAllBooks" destination="qAh-MP-GxM" id="67o-fU-6Zl"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="hfy-hX-Udq">
-                            <connections>
-                                <action selector="addBook" destination="qAh-MP-GxM" id="e3s-2F-mUF"/>
-                            </connections>
-                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="VUe-7m-OiS" id="9SE-HC-BPZ"/>

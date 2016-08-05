@@ -24,8 +24,7 @@ class BooksViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    @IBAction func addBook() {
-    }
+
     
     @IBAction func removeAllBooks() {
         guard let books = booksController.sections?[0].objects as? [Book]
@@ -38,9 +37,7 @@ class BooksViewController: UIViewController {
         }
         try! managedObjectContext.save()
         
-//        let booksRequest = NSFetchRequest(entityName: Book.entityName)
-//        let booksDeleteRequest = NSBatchDeleteRequest(fetchRequest: booksRequest)
-//        try! managedObjectContext.persistentStoreCoordinator!.executeRequest(booksDeleteRequest, withContext: managedObjectContext)
+
     }
     
     typealias EmptyBlock = () -> ()

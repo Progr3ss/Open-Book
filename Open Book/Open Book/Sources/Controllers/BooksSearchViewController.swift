@@ -64,6 +64,8 @@ class BooksSearchViewController: UIViewController {
         booksSearchRequest?.cancel()
         booksSearchRequest = nil
     }
+	
+	
     
     func updateUI() {
         var text: String?
@@ -84,6 +86,15 @@ class BooksSearchViewController: UIViewController {
         
         tableView.separatorStyle = showStatusView ? .None : .SingleLine
     }
+	
+	func displayFailure(){
+
+		let alert = UIAlertController(title: "Under Maintenance", message: "The Site will be back up shortly. Come back later", preferredStyle: UIAlertControllerStyle.Alert)
+
+		alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+		
+		self.presentViewController(alert, animated: true, completion: nil)
+	}
     
     func startSearchingForQuery(query: String) {
         cancelSearching()
@@ -119,6 +130,7 @@ class BooksSearchViewController: UIViewController {
                     self.lastMessage = "Cannot load results"
                 }
             case .Failure(let error):
+				self.displayFailure()
                 print("search failed with error: \(error)")
                 self.lastMessage = "Cannot search"
             }
